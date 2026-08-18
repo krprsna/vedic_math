@@ -1,4 +1,9 @@
 // Add state to track active problem and profile
+'use client';
+
+export const dynamic = 'force-dynamic';
+
+import React, { useState, useRef, useEffect } from 'react';
 const [profileId, setProfileId] = useState(1); // Set from selected active profile
 const [problem, setProblem] = useState(null);
 const [loading, setLoading] = useState(true);
